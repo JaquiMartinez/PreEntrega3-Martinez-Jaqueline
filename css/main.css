@@ -21,9 +21,12 @@ footer {
   @media screen and (max-width: 576px) {
     footer {
       flex-direction: column;
-      font-size: 15px; } }
+      font-size: 12px; } }
   footer .footer__direc .direc__ubi {
     margin: 0; }
+    @media screen and (max-width: 576px) {
+      footer .footer__direc .direc__ubi {
+        font-size: 15px; } }
   footer .footer__direc .direc__p {
     margin: 0; }
     @media screen and (max-width: 576px) {
@@ -36,6 +39,9 @@ footer {
       justify-content: center; } }
   footer .footer__nav .logo-redes {
     margin-left: 40px; }
+    @media screen and (max-width: 576px) {
+      footer .footer__nav .logo-redes {
+        margin: 0px 17px; } }
 
 .header {
   display: flex;
@@ -52,7 +58,7 @@ footer {
       height: auto; }
       @media screen and (max-width: 576px) {
         .header .header__navbar .header__logo {
-          width: 130px;
+          width: 80px;
           height: auto; } }
     .header .header__navbar .navbar__list {
       display: flex;
@@ -99,9 +105,14 @@ footer {
   background-position: center;
   background-attachment: fixed;
   background-size: cover; }
+  .body-contact main {
+    display: flex; }
+    @media screen and (max-width: 576px) {
+      .body-contact main {
+        flex-direction: column; } }
   .body-contact .form {
     background-color: rgba(118, 175, 157, 0.6);
-    width: auto;
+    width: 60%;
     height: auto;
     margin: 50px 70px;
     color: white;
@@ -109,6 +120,7 @@ footer {
     border-radius: 60px; }
     @media screen and (max-width: 576px) {
       .body-contact .form {
+        width: 95%;
         margin: 10px;
         font-size: 15px;
         border-radius: 18px; } }
@@ -120,7 +132,8 @@ footer {
         .body-contact .form .form__form {
           padding: 0px;
           display: flex;
-          flex-direction: column; } }
+          flex-direction: column;
+          text-align: center; } }
       .body-contact .form .form__form .form__description {
         margin: 10px; }
         .body-contact .form .form__form .form__description input {
@@ -161,8 +174,10 @@ footer {
           transition: all 1s ease; }
   .body-contact .section-contact {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around; }
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 30px; }
     @media screen and (max-width: 576px) {
       .body-contact .section-contact {
         display: flex;
@@ -483,50 +498,46 @@ footer {
   background-position: 70%;
   background-size: cover;
   background-attachment: fixed; }
-  .shop .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-    .shop .container .row {
-      width: 100%; }
-      .shop .container .row .card {
-        width: 200px;
-        height: 350px;
-        background: linear-gradient(0deg, #c3a29e 29%, #dbd1d1 100%);
-        border-radius: 40px;
-        margin: 30px auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 10px;
+  .shop .container .row {
+    width: 100%; }
+    .shop .container .row .card {
+      width: 200px;
+      height: 350px;
+      background: linear-gradient(0deg, #c3a29e 29%, #dbd1d1 100%);
+      border-radius: 40px;
+      margin: 30px auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 10px;
+      color: white;
+      box-shadow: 3px 3px 30px black; }
+      .shop .container .row .card:hover {
+        transform: scale(1.2);
+        transition: all 1s ease; }
+      @media screen and (max-width: 576px) {
+        .shop .container .row .card {
+          margin: 20px 80px;
+          display: flex;
+          flex-direction: column; }
+          .shop .container .row .card:hover {
+            transform: none; } }
+      .shop .container .row .card .button-buy {
+        width: 70px;
+        height: 30px;
+        background: transparent;
         color: white;
-        box-shadow: 3px 3px 30px black; }
-        .shop .container .row .card:hover {
-          transform: scale(1.2);
-          transition: all 1s ease; }
-        @media screen and (max-width: 576px) {
-          .shop .container .row .card {
-            margin: 20px 80px;
-            display: flex;
-            flex-direction: column; }
-            .shop .container .row .card:hover {
-              transform: none; } }
-        .shop .container .row .card .button-buy {
-          width: 70px;
-          height: 30px;
-          background: transparent;
-          color: white;
-          border-color: white;
-          border-radius: 10px;
-          border-style: solid;
-          font-family: 'Judson', serif;
-          font-size: 15px; }
-        .shop .container .row .card .card__tittle, .shop .container .row .card .card__price {
-          color: white;
-          font-size: 16px;
-          font-family: 'Judson', serif; }
+        border-color: white;
+        border-radius: 10px;
+        border-style: solid;
+        font-family: 'Judson', serif;
+        font-size: 15px; }
+      .shop .container .row .card .card__tittle, .shop .container .row .card .card__price {
+        color: white;
+        font-size: 16px;
+        font-family: 'Judson', serif; }
 
 /*------------------------------------ Pag INICIO-------------*/
 .index {
