@@ -69,6 +69,11 @@ footer {
           display: flex;
           flex-direction: column;
           width: 100%; } }
+      @media screen and (min-width: 578px) and (max-width: 991px) {
+        .header .header__navbar .navbar__list {
+          display: flex;
+          flex-direction: column;
+          width: 100%; } }
       .header .header__navbar .navbar__list .list__pag {
         font-size: 24px;
         border: 3px solid #C9AC1E;
@@ -79,6 +84,13 @@ footer {
         background-color: rgba(48, 43, 34, 0.473);
         margin-right: 10%; }
         @media screen and (max-width: 576px) {
+          .header .header__navbar .navbar__list .list__pag {
+            margin-top: 15px; }
+            .header .header__navbar .navbar__list .list__pag .nav-link {
+              font-size: 19px;
+              padding: 0;
+              display: inline; } }
+        @media screen and (min-width: 578px) and (max-width: 991px) {
           .header .header__navbar .navbar__list .list__pag {
             margin-top: 15px; }
             .header .header__navbar .navbar__list .list__pag .nav-link {
@@ -110,6 +122,10 @@ footer {
     @media screen and (max-width: 576px) {
       .body-contact main {
         flex-direction: column; } }
+    @media screen and (min-width: 578px) and (max-width: 991px) {
+      .body-contact main {
+        flex-direction: column;
+        align-items: center; } }
   .body-contact .form {
     background-color: rgba(118, 175, 157, 0.6);
     width: 60%;
@@ -121,6 +137,12 @@ footer {
     @media screen and (max-width: 576px) {
       .body-contact .form {
         width: 95%;
+        margin: 10px;
+        font-size: 15px;
+        border-radius: 18px; } }
+    @media screen and (min-width: 578px) and (max-width: 991px) {
+      .body-contact .form {
+        width: 80%;
         margin: 10px;
         font-size: 15px;
         border-radius: 18px; } }
@@ -313,7 +335,7 @@ footer {
     width: 100%;
     margin-top: 40px; }
     .services .service__container .container__manicure {
-      width: 80vw;
+      width: auto;
       height: auto;
       background-color: rgba(243, 218, 216, 0.5);
       border-radius: 40px;
@@ -334,163 +356,211 @@ footer {
           padding: 5px; }
           .services .service__container .container__manicure:hover {
             transform: none; } }
-      .services .service__container .container__manicure .manicure__service {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-left: 80px; }
-        @media screen and (max-width: 576px) {
-          .services .service__container .container__manicure .manicure__service {
-            flex-direction: column;
-            margin: 10px; } }
-        .services .service__container .container__manicure .manicure__service .manicure__description {
-          margin: 30px;
-          display: flex;
-          flex-direction: row; }
-          @media screen and (max-width: 576px) {
-            .services .service__container .container__manicure .manicure__service .manicure__description {
-              margin: 30px;
-              display: flex;
-              flex-direction: column; } }
-          .services .service__container .container__manicure .manicure__service .manicure__description .description__listm {
-            list-style-type: circle; }
-            .services .service__container .container__manicure .manicure__service .manicure__description .description__listm .list__type {
-              font-size: 23px;
-              font-weight: lighter;
-              color: white;
-              text-align: start;
-              margin-right: 80px;
-              width: 100%; }
-              @media screen and (max-width: 576px) {
-                .services .service__container .container__manicure .manicure__service .manicure__description .description__listm .list__type {
-                  font-size: 18px;
-                  text-align: start;
-                  width: 100%; } }
-    .services .service__container .container__facial {
-      margin-top: 60px;
-      width: 80vw;
-      height: auto;
-      background-color: rgba(243, 218, 216, 0.5);
-      border-radius: 40px;
-      padding: 30px; }
-      .services .service__container .container__facial h3 {
-        color: white;
-        text-align: center;
-        font-size: 25px;
-        font-weight: lighter; }
-        @media screen and (max-width: 576px) {
-          .services .service__container .container__facial h3 {
-            margin-top: 10px;
-            margin-bottom: 20px; } }
-      @media screen and (max-width: 576px) {
-        .services .service__container .container__facial {
-          width: 80%;
+      @media screen and (min-width: 578px) and (max-width: 991px) {
+        .services .service__container .container__manicure {
+          max-width: 750px;
           height: auto;
           padding: 5px; }
-          .services .service__container .container__facial:hover {
+          .services .service__container .container__manicure:hover {
             transform: none; } }
-      .services .service__container .container__facial .facial__service {
+    .services .service__container .manicure__service {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 80px; }
+      @media screen and (max-width: 576px) {
+        .services .service__container .manicure__service {
+          flex-direction: column;
+          margin: 10px; } }
+      @media screen and (min-width: 578px) and (max-width: 991px) {
+        .services .service__container .manicure__service {
+          flex-direction: column;
+          margin: 10px; } }
+      .services .service__container .manicure__service .manicure__description {
+        margin: 30px;
         display: flex;
-        flex-direction: row-reverse;
-        margin-right: 80px;
-        align-items: center;
-        margin-top: 50px; }
+        flex-direction: row; }
         @media screen and (max-width: 576px) {
-          .services .service__container .container__facial .facial__service {
+          .services .service__container .manicure__service .manicure__description {
+            margin: 30px;
             display: flex;
-            flex-direction: column;
-            margin: 10px; } }
-        .services .service__container .container__facial .facial__service .facial__description {
-          margin-right: 0px;
-          display: flex;
-          flex-direction: row; }
-          @media screen and (max-width: 576px) {
-            .services .service__container .container__facial .facial__service .facial__description {
-              margin-top: 15px;
-              margin-right: 80px;
-              display: flex;
-              flex-direction: column; } }
-          .services .service__container .container__facial .facial__service .facial__description .description__listf {
-            list-style-type: circle; }
+            flex-direction: column; } }
+        .services .service__container .manicure__service .manicure__description .description__listm {
+          list-style-type: circle; }
+          .services .service__container .manicure__service .manicure__description .description__listm .list__type {
+            font-size: 23px;
+            font-weight: lighter;
+            color: white;
+            text-align: start;
+            margin-right: 80px;
+            width: 100%; }
             @media screen and (max-width: 576px) {
-              .services .service__container .container__facial .facial__service .facial__description .description__listf {
-                margin-left: 90px; } }
-            .services .service__container .container__facial .facial__service .facial__description .description__listf .list__type {
-              font-size: 23px;
-              font-weight: lighter;
-              color: white;
-              text-align: start;
-              margin-right: 80px;
-              width: 100%; }
-              @media screen and (max-width: 576px) {
-                .services .service__container .container__facial .facial__service .facial__description .description__listf .list__type {
-                  font-size: 18px;
-                  text-align: start;
-                  width: 100%; } }
-    .services .service__container .container__massages {
-      margin-top: 60px;
-      width: 80vw;
-      height: auto;
-      background-color: rgba(243, 218, 216, 0.5);
-      border-radius: 40px;
-      padding: 30px; }
-      .services .service__container .container__massages h3 {
-        color: white;
-        text-align: center;
-        font-size: 25px;
-        font-weight: lighter; }
-        @media screen and (max-width: 576px) {
-          .services .service__container .container__massages h3 {
-            margin-top: 10px;
-            margin-bottom: 20px; } }
-      @media screen and (max-width: 576px) {
-        .services .service__container .container__massages {
-          width: 80%;
-          height: auto;
-          padding: 5px; }
-          .services .service__container .container__massages:hover {
-            transform: none; } }
-      .services .service__container .container__massages .massages__service {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        margin-left: 30px;
-        margin-top: 50px; }
-        @media screen and (max-width: 576px) {
-          .services .service__container .container__massages .massages__service {
-            flex-direction: column;
-            margin: 10px; } }
-        .services .service__container .container__massages .massages__service .massages__description {
-          margin-right: 80px;
-          display: flex;
-          flex-direction: row; }
-          @media screen and (max-width: 576px) {
-            .services .service__container .container__massages .massages__service .massages__description {
-              margin: 30px;
-              display: flex;
-              flex-direction: column; } }
-          .services .service__container .container__massages .massages__service .massages__description .description__listma {
-            list-style-type: circle; }
-            .services .service__container .container__massages .massages__service .massages__description .description__listma .list__type {
-              font-size: 23px;
-              font-weight: lighter;
-              color: white;
-              text-align: start;
-              margin-right: 80px;
-              width: 100%; }
-              @media screen and (max-width: 576px) {
-                .services .service__container .container__massages .massages__service .massages__description .description__listma .list__type {
-                  font-size: 18px;
-                  text-align: start;
-                  width: 100%; } }
-  .services .service__img {
-    min-width: 80%;
+              .services .service__container .manicure__service .manicure__description .description__listm .list__type {
+                font-size: 18px;
+                text-align: start;
+                width: 100%; } }
+            @media screen and (min-width: 578px) and (max-width: 991px) {
+              .services .service__container .manicure__service .manicure__description .description__listm .list__type {
+                margin-top: 10px;
+                font-size: 20px;
+                width: 75%; } }
+  .services .container__facial {
+    margin-top: 60px;
+    width: auto;
     height: auto;
-    border-radius: 15px;
-    box-shadow: 3px 3px 10px; }
+    background-color: rgba(243, 218, 216, 0.5);
+    border-radius: 40px;
+    padding: 30px; }
+    .services .container__facial h3 {
+      color: white;
+      text-align: center;
+      font-size: 25px;
+      font-weight: lighter; }
+      @media screen and (max-width: 576px) {
+        .services .container__facial h3 {
+          margin-top: 10px;
+          margin-bottom: 20px; } }
     @media screen and (max-width: 576px) {
-      .services .service__img {
-        width: 100%; } }
+      .services .container__facial {
+        width: 80%;
+        height: auto;
+        padding: 5px; }
+        .services .container__facial:hover {
+          transform: none; } }
+  @media screen and (max-width: 576px) and (min-width: 578px) and (max-width: 991px) {
+    .services .container__facial {
+      max-width: 750px;
+      height: auto;
+      padding: 5px; }
+      .services .container__facial:hover {
+        transform: none; } }
+    .services .container__facial .facial__service {
+      display: flex;
+      flex-direction: row-reverse;
+      margin-right: 80px;
+      align-items: center;
+      margin-top: 50px; }
+      @media screen and (max-width: 576px) {
+        .services .container__facial .facial__service {
+          display: flex;
+          flex-direction: column;
+          margin: 10px; } }
+      @media screen and (min-width: 578px) and (max-width: 991px) {
+        .services .container__facial .facial__service {
+          flex-direction: column;
+          margin: 10px; } }
+      .services .container__facial .facial__service .facial__description {
+        margin: 30px;
+        display: flex;
+        flex-direction: row; }
+        @media screen and (max-width: 576px) {
+          .services .container__facial .facial__service .facial__description {
+            margin-top: 15px;
+            margin-right: 80px;
+            display: flex;
+            flex-direction: column; } }
+        .services .container__facial .facial__service .facial__description .description__listf {
+          list-style-type: circle; }
+          @media screen and (max-width: 576px) {
+            .services .container__facial .facial__service .facial__description .description__listf {
+              margin-left: 90px; } }
+          .services .container__facial .facial__service .facial__description .description__listf .list__type {
+            font-size: 23px;
+            font-weight: lighter;
+            color: white;
+            text-align: start;
+            margin-right: 80px;
+            width: 100%; }
+            @media screen and (max-width: 576px) {
+              .services .container__facial .facial__service .facial__description .description__listf .list__type {
+                font-size: 18px;
+                text-align: start;
+                width: 100%; } }
+            @media screen and (min-width: 578px) and (max-width: 991px) {
+              .services .container__facial .facial__service .facial__description .description__listf .list__type {
+                margin-top: 10px;
+                font-size: 20px;
+                width: 75%; } }
+  .services .container__massages {
+    margin-top: 60px;
+    width: auto;
+    height: auto;
+    background-color: rgba(243, 218, 216, 0.5);
+    border-radius: 40px;
+    padding: 30px; }
+    .services .container__massages h3 {
+      color: white;
+      text-align: center;
+      font-size: 25px;
+      font-weight: lighter; }
+      @media screen and (max-width: 576px) {
+        .services .container__massages h3 {
+          margin-top: 10px;
+          margin-bottom: 20px; } }
+    @media screen and (max-width: 576px) {
+      .services .container__massages {
+        width: 80%;
+        height: auto;
+        padding: 5px; }
+        .services .container__massages:hover {
+          transform: none; } }
+    @media screen and (min-width: 578px) and (max-width: 991px) {
+      .services .container__massages {
+        max-width: 750px;
+        height: auto;
+        padding: 5px; }
+        .services .container__massages:hover {
+          transform: none; } }
+    .services .container__massages .massages__service {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 50px; }
+      @media screen and (max-width: 576px) {
+        .services .container__massages .massages__service {
+          flex-direction: column;
+          margin: 10px; } }
+      @media screen and (min-width: 578px) and (max-width: 991px) {
+        .services .container__massages .massages__service {
+          flex-direction: column;
+          margin: 10px; } }
+      .services .container__massages .massages__service .massages__description {
+        margin: 5px;
+        display: flex;
+        flex-direction: row; }
+        @media screen and (max-width: 576px) {
+          .services .container__massages .massages__service .massages__description {
+            margin: 30px;
+            display: flex;
+            flex-direction: column; } }
+        .services .container__massages .massages__service .massages__description .description__listma {
+          list-style-type: circle; }
+          .services .container__massages .massages__service .massages__description .description__listma .list__type {
+            font-size: 23px;
+            font-weight: lighter;
+            color: white;
+            text-align: start;
+            margin-right: 80px;
+            width: 100%; }
+            @media screen and (max-width: 576px) {
+              .services .container__massages .massages__service .massages__description .description__listma .list__type {
+                font-size: 18px;
+                text-align: start;
+                width: 100%; } }
+            @media screen and (min-width: 578px) and (max-width: 991px) {
+              .services .container__massages .massages__service .massages__description .description__listma .list__type {
+                margin-top: 10px;
+                font-size: 20px;
+                width: 75%; } }
+
+.service__img {
+  min-width: 80%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px; }
+  @media screen and (max-width: 576px) {
+    .service__img {
+      width: 100%; } }
 
 .shop {
   background-image: url(../img/fondoshop.jpg);
@@ -571,6 +641,11 @@ footer {
         flex-direction: column-reverse;
         align-items: center;
         justify-content: center; } }
+    @media screen and (min-width: 578px) and (max-width: 991px) {
+      .index .main__index {
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center; } }
     .index .main__index .index__text {
       background-color: rgba(118, 175, 157, 0.8);
       width: 50%;
@@ -580,6 +655,9 @@ footer {
       @media screen and (max-width: 576px) {
         .index .main__index .index__text {
           width: 100%; } }
+      @media screen and (min-width: 578px) and (max-width: 991px) {
+        .index .main__index .index__text {
+          width: 75%; } }
       .index .main__index .index__text .text__tittlemain {
         color: white;
         text-align: center;
@@ -608,6 +686,12 @@ footer {
       @media screen and (max-width: 576px) {
         .index .main__index .carousel {
           width: 100%;
+          height: auto;
+          margin-top: 20px;
+          margin-right: 70px; } }
+      @media screen and (min-width: 578px) and (max-width: 991px) {
+        .index .main__index .carousel {
+          width: 75%;
           height: auto;
           margin-top: 20px;
           margin-right: 70px; } }

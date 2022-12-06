@@ -22,8 +22,9 @@
         align-items: center;
         width: 100%;
         margin-top: 40px;
+        
         .container__manicure {
-            width: 80vw;
+            width: auto;
             height: auto;
             background-color: rgba(243, 218, 216, 0.5);
             border-radius: 40px;
@@ -44,14 +45,27 @@
                 padding: 5px;
                 &:hover {
                 transform: none
+                }
             }
+            @include tablet {
+                max-width: 750px;
+                height: auto;
+                padding: 5px;
+                &:hover {
+                transform: none
+                }
             }
+        }
             .manicure__service {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 margin-left: 80px;
                 @include mobile {
+                    flex-direction: column;
+                    margin: 10px;
+                }
+                @include tablet {
                     flex-direction: column;
                     margin: 10px;
                 }
@@ -65,6 +79,7 @@
                         display: flex;
                         flex-direction: column;
                     }
+                   
                     .description__listm {
                         list-style-type: circle;
                         .list__type {
@@ -79,6 +94,11 @@
                                 text-align: start;
                                 width: 100%;
                             }
+                            @include tablet {
+                                margin-top: 10px;
+                                font-size: 20px;
+                                width: 75%;
+                            }
                             
                         }
                     }
@@ -88,7 +108,7 @@
         }
         .container__facial {
             margin-top: 60px;
-            width: 80vw;
+            width: auto;
             height: auto;
             background-color: rgba(243, 218, 216, 0.5);
             border-radius: 40px;
@@ -110,6 +130,14 @@
                 &:hover {
                     transform: none;
             }
+            @include tablet {
+                max-width: 750px;
+                height: auto;
+                padding: 5px;
+                &:hover {
+                transform: none
+            }
+            }
 
             }
             .facial__service {
@@ -123,8 +151,12 @@
                     flex-direction: column;
                     margin: 10px;
                 }
+                @include tablet {
+                    flex-direction: column;
+                    margin: 10px;
+                }
                 .facial__description {
-                    margin-right:0px;
+                    margin:30px;
                     display: flex;
                     flex-direction: row;
                     @include mobile {
@@ -152,10 +184,11 @@
                                 text-align: start;
                                 width: 100%;
                             }
-                            
-                            
-                            
-                            
+                            @include tablet {
+                                margin-top: 10px;
+                                font-size: 20px;
+                                width: 75%;
+                            }
                         }
                     }
                 }
@@ -163,7 +196,7 @@
         }
         .container__massages {
             margin-top: 60px;
-            width: 80vw;
+            width: auto;
             height: auto;
             background-color: rgba(243, 218, 216, 0.5);
             border-radius: 40px;
@@ -185,21 +218,31 @@
                 &:hover {
                     transform: none;
                 }
-
+            }
+            @include tablet {
+                max-width: 750px;
+                height: auto;
+                padding: 5px;
+                &:hover {
+                transform: none
+                }
             }
             .massages__service {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                margin-left: 30px;
                 margin-top: 50px;
+                
                 @include mobile {
                     flex-direction: column;
                     margin: 10px;
-
+                }
+                @include tablet {
+                    flex-direction: column;
+                    margin: 10px;
                 }
                 .massages__description {
-                    margin-right: 80px;
+                    margin: 5px;
                     display: flex;
                     flex-direction: row;
                     @include mobile {
@@ -222,6 +265,11 @@
                                 text-align: start;
                                 width: 100%;
                             }
+                            @include tablet {
+                                margin-top: 10px;
+                                font-size: 20px;
+                                width: 75%;
+                            }
                             
                             
                         }
@@ -241,6 +289,6 @@
         }
     }
     
-}
+
 
 
