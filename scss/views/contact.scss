@@ -4,7 +4,22 @@
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    main {
+    .tittle-contact {
+        color: white;
+        font-size: 31px;
+        text-align: center;
+        padding-top: 20px;
+        margin: 15px 60px;
+        @include tablet {
+            font-size: 25px;
+        }
+        @include mobile {
+            font-size: 20px;
+            margin: 5px 10px;
+            padding: 0;
+        }
+    }
+    .div-main {
         display: flex;
         @include mobile {
             flex-direction: column;
@@ -121,6 +136,17 @@
             color: white;
             @include mobile {
                 font-size: 30px;
+            }
+        }
+        .maps {
+            margin: 30px;
+            @include mobile {
+                margin:0;
+                padding-top: 20px;
+            }
+            .iframe {
+                width: 300px;
+                height: 250px;
             }
         }
     }

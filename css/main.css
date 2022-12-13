@@ -117,13 +117,27 @@ footer {
   background-position: center;
   background-attachment: fixed;
   background-size: cover; }
-  .body-contact main {
+  .body-contact .tittle-contact {
+    color: white;
+    font-size: 31px;
+    text-align: center;
+    padding-top: 20px;
+    margin: 15px 60px; }
+    @media screen and (min-width: 578px) and (max-width: 991px) {
+      .body-contact .tittle-contact {
+        font-size: 25px; } }
+    @media screen and (max-width: 576px) {
+      .body-contact .tittle-contact {
+        font-size: 20px;
+        margin: 5px 10px;
+        padding: 0; } }
+  .body-contact .div-main {
     display: flex; }
     @media screen and (max-width: 576px) {
-      .body-contact main {
+      .body-contact .div-main {
         flex-direction: column; } }
     @media screen and (min-width: 578px) and (max-width: 991px) {
-      .body-contact main {
+      .body-contact .div-main {
         flex-direction: column;
         align-items: center; } }
   .body-contact .form {
@@ -222,6 +236,15 @@ footer {
       @media screen and (max-width: 576px) {
         .body-contact .section-contact .section-pay {
           font-size: 30px; } }
+    .body-contact .section-contact .maps {
+      margin: 30px; }
+      @media screen and (max-width: 576px) {
+        .body-contact .section-contact .maps {
+          margin: 0;
+          padding-top: 20px; } }
+      .body-contact .section-contact .maps .iframe {
+        width: 300px;
+        height: 250px; }
 
 .galery {
   background-image: url(../img/galeria.jpg);
@@ -335,7 +358,7 @@ footer {
     width: 100%;
     margin-top: 40px; }
     .services .service__container .container__manicure {
-      width: auto;
+      width: 95%;
       height: auto;
       background-color: rgba(243, 218, 216, 0.5);
       border-radius: 40px;
@@ -367,7 +390,8 @@ footer {
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin-left: 80px; }
+      margin-left: 80px;
+      width: 100%; }
       @media screen and (max-width: 576px) {
         .services .service__container .manicure__service {
           flex-direction: column;
@@ -379,14 +403,16 @@ footer {
       .services .service__container .manicure__service .manicure__description {
         margin: 30px;
         display: flex;
-        flex-direction: row; }
+        flex-direction: row;
+        width: 100%; }
         @media screen and (max-width: 576px) {
           .services .service__container .manicure__service .manicure__description {
             margin: 30px;
             display: flex;
             flex-direction: column; } }
         .services .service__container .manicure__service .manicure__description .description__listm {
-          list-style-type: circle; }
+          list-style-type: circle;
+          width: 100%; }
           .services .service__container .manicure__service .manicure__description .description__listm .list__type {
             font-size: 23px;
             font-weight: lighter;
@@ -404,9 +430,19 @@ footer {
                 margin-top: 10px;
                 font-size: 20px;
                 width: 75%; } }
+          .services .service__container .manicure__service .manicure__description .description__listm .info {
+            font-size: 18px;
+            margin: 0;
+            color: white;
+            border: 1px solid white;
+            border-radius: 5px; }
+          .services .service__container .manicure__service .manicure__description .description__listm .info-description {
+            background: transparent;
+            border: none;
+            width: 100%; }
   .services .container__facial {
     margin-top: 60px;
-    width: auto;
+    width: 95%;
     height: auto;
     background-color: rgba(243, 218, 216, 0.5);
     border-radius: 40px;
@@ -439,7 +475,8 @@ footer {
       flex-direction: row-reverse;
       margin-right: 80px;
       align-items: center;
-      margin-top: 50px; }
+      margin-top: 50px;
+      width: 100%; }
       @media screen and (max-width: 576px) {
         .services .container__facial .facial__service {
           display: flex;
@@ -452,7 +489,8 @@ footer {
       .services .container__facial .facial__service .facial__description {
         margin: 30px;
         display: flex;
-        flex-direction: row; }
+        flex-direction: row;
+        width: 100%; }
         @media screen and (max-width: 576px) {
           .services .container__facial .facial__service .facial__description {
             margin-top: 15px;
@@ -460,10 +498,11 @@ footer {
             display: flex;
             flex-direction: column; } }
         .services .container__facial .facial__service .facial__description .description__listf {
-          list-style-type: circle; }
+          list-style-type: circle;
+          width: 100%; }
           @media screen and (max-width: 576px) {
             .services .container__facial .facial__service .facial__description .description__listf {
-              margin-left: 90px; } }
+              margin-left: 10px; } }
           .services .container__facial .facial__service .facial__description .description__listf .list__type {
             font-size: 23px;
             font-weight: lighter;
@@ -481,9 +520,19 @@ footer {
                 margin-top: 10px;
                 font-size: 20px;
                 width: 75%; } }
+          .services .container__facial .facial__service .facial__description .description__listf .info {
+            font-size: 18px;
+            margin: 0;
+            color: white;
+            border: 1px solid white;
+            border-radius: 5px; }
+          .services .container__facial .facial__service .facial__description .description__listf .info-description {
+            background: transparent;
+            border: none;
+            width: 100%; }
   .services .container__massages {
     margin-top: 60px;
-    width: auto;
+    width: 95%;
     height: auto;
     background-color: rgba(243, 218, 216, 0.5);
     border-radius: 40px;
@@ -515,7 +564,8 @@ footer {
       display: flex;
       flex-direction: row;
       align-items: center;
-      margin-top: 50px; }
+      margin-top: 50px;
+      width: 100%; }
       @media screen and (max-width: 576px) {
         .services .container__massages .massages__service {
           flex-direction: column;
@@ -527,14 +577,16 @@ footer {
       .services .container__massages .massages__service .massages__description {
         margin: 5px;
         display: flex;
-        flex-direction: row; }
+        flex-direction: row;
+        width: 100%; }
         @media screen and (max-width: 576px) {
           .services .container__massages .massages__service .massages__description {
             margin: 30px;
             display: flex;
             flex-direction: column; } }
         .services .container__massages .massages__service .massages__description .description__listma {
-          list-style-type: circle; }
+          list-style-type: circle;
+          width: 100%; }
           .services .container__massages .massages__service .massages__description .description__listma .list__type {
             font-size: 23px;
             font-weight: lighter;
@@ -552,6 +604,16 @@ footer {
                 margin-top: 10px;
                 font-size: 20px;
                 width: 75%; } }
+          .services .container__massages .massages__service .massages__description .description__listma .info {
+            font-size: 18px;
+            margin: 0;
+            color: white;
+            border: 1px solid white;
+            border-radius: 5px; }
+          .services .container__massages .massages__service .massages__description .description__listma .info-description {
+            background: transparent;
+            border: none;
+            width: 100%; }
 
 .service__img {
   min-width: 80%;
@@ -560,7 +622,7 @@ footer {
   box-shadow: 3px 3px 10px; }
   @media screen and (max-width: 576px) {
     .service__img {
-      width: 100%; } }
+      width: 92%; } }
 
 .shop {
   background-image: url(../img/fondoshop.jpg);
@@ -608,6 +670,10 @@ footer {
         color: white;
         font-size: 16px;
         font-family: 'Judson', serif; }
+  .shop .shipping {
+    color: white;
+    text-align: center;
+    font-size: 25px; }
 
 /*------------------------------------ Pag INICIO-------------*/
 .index {

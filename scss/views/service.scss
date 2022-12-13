@@ -24,7 +24,7 @@
         margin-top: 40px;
         
         .container__manicure {
-            width: auto;
+            width: 95%;
             height: auto;
             background-color: rgba(243, 218, 216, 0.5);
             border-radius: 40px;
@@ -61,6 +61,7 @@
                 flex-direction: row;
                 align-items: center;
                 margin-left: 80px;
+                width: 100%;
                 @include mobile {
                     flex-direction: column;
                     margin: 10px;
@@ -74,6 +75,7 @@
                     margin: 30px;
                     display: flex;
                     flex-direction: row;
+                    width: 100%;
                     @include mobile {
                         margin: 30px;
                         display: flex;
@@ -82,6 +84,7 @@
                    
                     .description__listm {
                         list-style-type: circle;
+                        width: 100%;
                         .list__type {
                             font-size: 23px;
                             font-weight: lighter;
@@ -89,6 +92,7 @@
                             text-align: start;
                             margin-right: 80px;
                             width: 100%;
+                            
                             @include mobile {
                                 font-size: 18px;
                                 text-align: start;
@@ -101,6 +105,18 @@
                             }
                             
                         }
+                        .info {
+                            font-size: 18px;
+                            margin: 0;
+                            color: white;
+                            border: 1px solid white;
+                            border-radius: 5px;
+                        }
+                        .info-description {
+                            background: transparent;
+                            border: none;
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -108,7 +124,7 @@
         }
         .container__facial {
             margin-top: 60px;
-            width: auto;
+            width: 95%;
             height: auto;
             background-color: rgba(243, 218, 216, 0.5);
             border-radius: 40px;
@@ -146,6 +162,7 @@
                 margin-right: 80px;
                 align-items: center;
                 margin-top: 50px;
+                width: 100%;
                 @include mobile {
                     display: flex;
                     flex-direction: column;
@@ -159,6 +176,7 @@
                     margin:30px;
                     display: flex;
                     flex-direction: row;
+                    width: 100%;
                     @include mobile {
                         margin-top: 15px;
                         margin-right: 80px;
@@ -169,8 +187,9 @@
 
                     .description__listf {
                         list-style-type: circle;
+                        width: 100%;
                         @include mobile {
-                            margin-left: 90px;
+                            margin-left: 10px;
                         }
                         .list__type {
                             font-size: 23px;
@@ -190,13 +209,25 @@
                                 width: 75%;
                             }
                         }
+                        .info {
+                            font-size: 18px;
+                            margin: 0;
+                            color: white;
+                            border: 1px solid white;
+                            border-radius: 5px;
+                        }
+                        .info-description {
+                            background: transparent;
+                            border: none;
+                            width: 100%;
+                        }
                     }
                 }
             }
         }
         .container__massages {
             margin-top: 60px;
-            width: auto;
+            width: 95%;
             height: auto;
             background-color: rgba(243, 218, 216, 0.5);
             border-radius: 40px;
@@ -232,6 +263,7 @@
                 flex-direction: row;
                 align-items: center;
                 margin-top: 50px;
+                width: 100%;
                 
                 @include mobile {
                     flex-direction: column;
@@ -245,6 +277,7 @@
                     margin: 5px;
                     display: flex;
                     flex-direction: row;
+                    width: 100%;
                     @include mobile {
                         margin: 30px;
                         display: flex;
@@ -253,6 +286,7 @@
                     }
                     .description__listma {
                         list-style-type: circle;
+                        width: 100%;
                         .list__type {
                             font-size: 23px;
                             font-weight: lighter;
@@ -273,6 +307,18 @@
                             
                             
                         }
+                        .info {
+                            font-size: 18px;
+                            margin: 0;
+                            color: white;
+                            border: 1px solid white;
+                            border-radius: 5px;
+                        }
+                        .info-description {
+                            background: transparent;
+                            border: none;
+                            width: 100%;
+                        }
                     }
                 }
             }
@@ -285,7 +331,7 @@
         border-radius: 15px;
         box-shadow: 3px 3px 10px;
         @include mobile {
-            width: 100%;
+            width: 92%;
         }
     }
     
